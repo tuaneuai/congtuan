@@ -33,11 +33,11 @@ export const HowToUse: React.FC = () => {
   ];
 
   return (
-    <section id="how-to-use" className="py-24 bg-white relative">
+    <section id="how-to-use" className="py-24 bg-gradient-to-b from-[#F0F7FF]/60 via-white to-[#FFF5F8]/60 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-sky-800">
+          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-rose-700">
             {t.howToUse.tag}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black text-slate-950 tracking-tight">
@@ -55,15 +55,15 @@ export const HowToUse: React.FC = () => {
             return (
               <div
                 key={step.number}
-                className="relative p-7 rounded-3xl bg-[#F8FAFC] border border-slate-200 hover:border-sky-400 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between"
+                className="relative p-7 rounded-3xl bg-white/90 border border-pink-100/90 hover:border-pink-300 hover:bg-white transition-all duration-300 shadow-xs hover:shadow-xl flex flex-col justify-between"
               >
                 <div>
                   {/* Step numerical indicator */}
                   <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-2xl bg-slate-950 text-white font-black text-base flex items-center justify-center shadow-sm">
+                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-rose-500 to-pink-500 text-white font-black text-base flex items-center justify-center shadow-xs">
                       {step.number}
                     </div>
-                    <div className="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-xl bg-pink-50 text-rose-600 flex items-center justify-center">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
@@ -78,14 +78,14 @@ export const HowToUse: React.FC = () => {
                 </div>
 
                 {/* Visual Step Illustration representation */}
-                <div className="mt-6 pt-4 border-t border-slate-200/80 flex items-center justify-center py-3 bg-white rounded-xl shadow-2xs">
+                <div className="mt-6 pt-4 border-t border-pink-100 flex items-center justify-center py-3 bg-pink-50/40 rounded-xl">
                   {step.number === '1' && (
                     <div className="text-center text-xs sm:text-sm font-bold text-slate-700">
                       💧 Čistá, suchá pleť
                     </div>
                   )}
                   {step.number === '2' && (
-                    <div className="text-center text-xs sm:text-sm font-bold text-sky-800">
+                    <div className="text-center text-xs sm:text-sm font-bold text-rose-700">
                       ✨ 2dílná hydrogelová maska
                     </div>
                   )}
@@ -95,8 +95,8 @@ export const HowToUse: React.FC = () => {
                     </div>
                   )}
                   {step.number === '4' && (
-                    <div className="text-center text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-1.5">
-                      <Moon className="w-4 h-4 text-sky-600" />
+                    <div className="text-center text-xs sm:text-sm font-bold text-rose-900 flex items-center gap-1.5">
+                      <Moon className="w-4 h-4 text-rose-500" />
                       <span>2–8 hodin / Přes noc</span>
                     </div>
                   )}
@@ -107,8 +107,8 @@ export const HowToUse: React.FC = () => {
         </div>
 
         {/* Expert Tip Callout */}
-        <div className="mt-14 max-w-3xl mx-auto p-7 rounded-3xl bg-gradient-to-r from-sky-50 via-blue-50 to-indigo-50/60 border border-sky-200 flex items-start gap-4 shadow-sm">
-          <div className="w-11 h-11 rounded-2xl bg-sky-600 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+        <div className="mt-14 max-w-3xl mx-auto p-7 rounded-3xl bg-gradient-to-r from-pink-50 via-rose-50/70 to-sky-50 border border-pink-200 flex items-start gap-4 shadow-xs">
+          <div className="w-11 h-11 rounded-2xl bg-gradient-to-r from-rose-500 to-pink-500 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
             <Sparkles className="w-6 h-6" />
           </div>
           <div>

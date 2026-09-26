@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <StoreProvider>
-      <div className="min-h-screen bg-[#F8FAFC] text-slate-800 font-sans flex flex-col selection:bg-sky-200 selection:text-slate-900 pb-16 md:pb-0">
+      <div className="min-h-screen bg-gradient-to-b from-[#FFF5F8] via-[#F0F7FF] via-white to-[#FFF5F8] text-slate-800 font-sans flex flex-col selection:bg-rose-200 selection:text-slate-900 pb-16 md:pb-0">
         {/* Top Luxury Image Banner Frame with Lighting Effects */}
         <TopLuxuryBanner onOpenVideo={() => setIsVideoModalOpen(true)} />
 

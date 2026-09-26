@@ -37,12 +37,12 @@ export const ReviewsSection: React.FC = () => {
   };
 
   return (
-    <section id="reviews" className="py-24 bg-white relative">
+    <section id="reviews" className="py-24 bg-gradient-to-b from-white via-[#FFF5F8]/50 to-[#F0F7FF]/50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with Average Rating & Write CTA */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-slate-200">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-pink-200/80">
           <div className="space-y-3">
-            <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-sky-800">
+            <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-rose-700">
               {t.reviews.tag}
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black text-slate-950 tracking-tight">

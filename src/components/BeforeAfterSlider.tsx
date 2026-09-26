@@ -28,11 +28,11 @@ export const BeforeAfterSlider: React.FC = () => {
   const hasCustomImages = !!(mediaSettings.beforeImageUrl && mediaSettings.afterImageUrl);
 
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 via-sky-50/20 to-white relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-[#FFF5F8]/60 via-[#F0F7FF]/50 to-white relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-sky-800">
+          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-rose-700">
             {t.beforeAfter.tag}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black text-slate-950 tracking-tight">

@@ -161,10 +161,23 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
               </div>
             )}
 
-            <div className="pt-2 text-xs sm:text-sm text-slate-300 space-y-1.5 font-medium">
-              <p>Email: <a href="mailto:info@seyoul.cz" className="text-sky-300 underline font-semibold">info@seyoul.cz</a></p>
-              <p>Telefon: <a href="tel:+420777123456" className="text-sky-300 underline font-semibold">+420 777 123 456</a></p>
-              <p className="text-slate-400">Expediční sklad: K Hájům 2606/2b, 155 00 Praha 5</p>
+            <div className="pt-2 text-xs sm:text-sm text-slate-300 space-y-2 font-medium">
+              <p className="flex items-center gap-2">
+                <span className="text-slate-400">Email:</span>
+                <a href="mailto:lezara.info@gmail.com" className="text-rose-300 hover:text-white underline font-semibold transition-colors">
+                  lezara.info@gmail.com
+                </a>
+              </p>
+              <p className="flex items-center gap-2">
+                <span className="text-slate-400">Telefon:</span>
+                <a href="tel:+420773868888" className="text-rose-300 hover:text-white underline font-semibold transition-colors">
+                  +420 773 868 888
+                </a>
+              </p>
+              <p className="flex items-start gap-2 text-slate-300">
+                <span className="text-slate-400 shrink-0">Adresa / Expedice:</span>
+                <span className="font-semibold text-slate-200">U Tržiště 2206, 594 01 Velké Meziříčí</span>
+              </p>
             </div>
           </div>
         </div>

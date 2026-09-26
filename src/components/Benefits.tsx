@@ -45,11 +45,11 @@ export const Benefits: React.FC = () => {
   ];
 
   return (
-    <section id="benefits" className="py-24 bg-white relative">
+    <section id="benefits" className="py-24 bg-gradient-to-b from-white via-[#FFF5F8]/60 to-[#F0F7FF]/70 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-sky-800">
+          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-rose-700">
             {t.benefits.tag}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black text-slate-950 tracking-tight">
@@ -67,21 +67,21 @@ export const Benefits: React.FC = () => {
             return (
               <div
                 key={item.index}
-                className="group relative p-8 sm:p-9 rounded-3xl bg-[#F8FAFC] border border-slate-200 hover:border-sky-400 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between"
+                className="group relative p-8 sm:p-9 rounded-3xl bg-white/90 border border-pink-100/90 hover:border-pink-300 hover:bg-white transition-all duration-300 shadow-xs hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
                   {/* Card Header with editorial index & quiet icon */}
                   <div className="flex items-center justify-between mb-6">
-                    <span className="text-3xl font-serif font-extrabold text-sky-900/60 group-hover:text-sky-700 transition-colors">
+                    <span className="text-3xl font-serif font-extrabold text-rose-900/40 group-hover:text-rose-600 transition-colors">
                       {item.index}
                     </span>
-                    <div className="w-12 h-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-sky-800 group-hover:text-sky-600 group-hover:border-sky-300 transition-colors shadow-xs">
+                    <div className="w-12 h-12 rounded-2xl bg-pink-50/80 border border-pink-100 flex items-center justify-center text-rose-600 group-hover:text-pink-600 group-hover:border-pink-300 transition-colors shadow-2xs">
                       <Icon className="w-6 h-6" />
                     </div>
                   </div>
 
                   {/* Card Title */}
-                  <h3 className="text-xl font-bold text-slate-950 mb-3 tracking-wide group-hover:text-sky-950">
+                  <h3 className="text-xl font-bold text-slate-950 mb-3 tracking-wide group-hover:text-rose-950">
                     {item.title}
                   </h3>
 
@@ -92,7 +92,7 @@ export const Benefits: React.FC = () => {
                 </div>
 
                 {/* Subtle bottom accent line */}
-                <div className="w-0 group-hover:w-full h-1 bg-gradient-to-r from-sky-500 to-blue-600 mt-6 transition-all duration-500 ease-out rounded-full"></div>
+                <div className="w-0 group-hover:w-full h-1 bg-gradient-to-r from-rose-500 via-pink-500 to-sky-500 mt-6 transition-all duration-500 ease-out rounded-full"></div>
               </div>
             );
           })}

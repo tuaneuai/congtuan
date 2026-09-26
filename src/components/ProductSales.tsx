@@ -32,11 +32,11 @@ export const ProductSales: React.FC = () => {
   };
 
   return (
-    <section id="pricing" className="py-24 bg-gradient-to-b from-white via-sky-50/30 to-[#F8FAFC] relative">
+    <section id="pricing" className="py-24 bg-gradient-to-b from-white via-[#FFF5F8]/60 to-[#F0F7FF]/60 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-sky-800">
+          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-rose-700">
             {t.pricing.tag}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black text-slate-950 tracking-tight">
@@ -57,14 +57,14 @@ export const ProductSales: React.FC = () => {
                 onClick={() => setSelectedVariantId(v.id)}
                 className={`relative rounded-3xl p-7 sm:p-9 cursor-pointer transition-all duration-300 border-2 flex flex-col justify-between ${
                   isSelected
-                    ? 'bg-white border-slate-950 shadow-2xl shadow-sky-950/15 -translate-y-2 ring-4 ring-sky-100'
-                    : 'bg-white/90 hover:bg-white border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-xl'
+                    ? 'bg-white border-rose-500 shadow-2xl shadow-pink-500/15 -translate-y-2 ring-4 ring-pink-100'
+                    : 'bg-white/90 hover:bg-white border-pink-100 hover:border-pink-300 shadow-sm hover:shadow-xl'
                 }`}
               >
                 {/* Optional Badge */}
                 {v.badge && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-slate-950 text-white text-xs font-black tracking-wider uppercase shadow-lg flex items-center gap-1.5 whitespace-nowrap">
-                    <Sparkles className="w-4 h-4 text-sky-300 animate-pulse" />
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-500 via-pink-600 to-sky-600 text-white text-xs font-black tracking-wider uppercase shadow-lg flex items-center gap-1.5 whitespace-nowrap">
+                    <Sparkles className="w-4 h-4 text-pink-200 animate-pulse" />
                     <span>{v.badge}</span>
                   </div>
                 )}
@@ -75,13 +75,13 @@ export const ProductSales: React.FC = () => {
                     <div
                       className={`w-7 h-7 rounded-full border-2 flex items-center justify-center transition-colors ${
                         isSelected
-                          ? 'border-slate-950 bg-slate-950 text-white'
+                          ? 'border-rose-500 bg-rose-500 text-white'
                           : 'border-slate-300 bg-white'
                       }`}
                     >
                       {isSelected && <Check className="w-4 h-4 stroke-[3]" />}
                     </div>
-                    <span className="text-xs sm:text-sm font-extrabold text-sky-900 bg-sky-100 px-3 py-1.5 rounded-lg border border-sky-200">
+                    <span className="text-xs sm:text-sm font-extrabold text-rose-900 bg-pink-100 px-3 py-1.5 rounded-lg border border-pink-200">
                       {v.masksCount} masek (34g)
                     </span>
                   </div>
@@ -110,7 +110,7 @@ export const ProductSales: React.FC = () => {
                     </div>
 
                     {/* Unit price badge */}
-                    <div className="text-xs sm:text-sm font-bold text-sky-900 bg-sky-100/90 border border-sky-200 rounded-xl px-3 py-1.5 inline-block">
+                    <div className="text-xs sm:text-sm font-bold text-rose-800 bg-pink-50 border border-pink-200 rounded-xl px-3 py-1.5 inline-block">
                       {v.boxesCount === 1 ? (
                         <span>{formatPrice(v.priceCZK, v.priceEUR)} / box (5 masek)</span>
                       ) : (
@@ -138,8 +138,8 @@ export const ProductSales: React.FC = () => {
                     </div>
 
                     {v.boxesCount >= 3 ? (
-                      <div className="flex items-center gap-2.5 text-sky-900 font-bold bg-sky-50 px-2.5 py-1.5 rounded-lg border border-sky-200">
-                        <Truck className="w-5 h-5 text-sky-700 shrink-0" />
+                      <div className="flex items-center gap-2.5 text-rose-900 font-bold bg-pink-50 px-2.5 py-1.5 rounded-lg border border-pink-200">
+                        <Truck className="w-5 h-5 text-rose-600 shrink-0" />
                         <span>{t.pricing.freeShippingBonus}</span>
                       </div>
                     ) : (
@@ -150,8 +150,8 @@ export const ProductSales: React.FC = () => {
                     )}
 
                     {v.boxesCount >= 5 && (
-                      <div className="flex items-center gap-2.5 text-indigo-950 font-bold bg-indigo-50 px-2.5 py-1.5 rounded-lg border border-indigo-200">
-                        <Sparkles className="w-5 h-5 text-indigo-600 shrink-0" />
+                      <div className="flex items-center gap-2.5 text-pink-950 font-bold bg-pink-50 px-2.5 py-1.5 rounded-lg border border-pink-200">
+                        <Sparkles className="w-5 h-5 text-pink-600 shrink-0" />
                         <span>{t.pricing.giftBonus}</span>
                       </div>
                     )}
@@ -163,8 +163,8 @@ export const ProductSales: React.FC = () => {
                     type="button"
                     className={`w-full py-4 px-4 rounded-xl text-xs sm:text-sm font-black uppercase tracking-wider transition-colors cursor-pointer ${
                       isSelected
-                        ? 'bg-slate-950 text-white hover:bg-sky-900 shadow-md'
-                        : 'bg-slate-100 text-slate-800 hover:bg-slate-200'
+                        ? 'bg-gradient-to-r from-rose-500 via-pink-600 to-sky-600 text-white shadow-md'
+                        : 'bg-pink-50/70 text-slate-800 hover:bg-pink-100 border border-pink-100'
                     }`}
                   >
                     {isSelected ? '✓ Đã chọn gói này' : 'Chọn gói này'}
@@ -176,7 +176,7 @@ export const ProductSales: React.FC = () => {
         </div>
 
         {/* Master Contiguous Purchase Module */}
-        <div className="bg-white rounded-3xl p-7 sm:p-11 border-2 border-slate-200 shadow-2xl max-w-4xl mx-auto">
+        <div className="bg-white rounded-3xl p-7 sm:p-11 border-2 border-pink-200/90 shadow-2xl shadow-pink-500/10 max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
             {/* Visual on left */}
             <div className="md:col-span-5 flex justify-center">
@@ -200,7 +200,7 @@ export const ProductSales: React.FC = () => {
                   SEYOUL Collagen Jelly Mask
                 </h3>
                 <p className="text-sm text-slate-600 mt-1 font-medium">
-                  Aktivní balíček: <span className="font-extrabold text-sky-900">{selectedVariant.name}</span>
+                  Aktivní balíček: <span className="font-extrabold text-rose-700">{selectedVariant.name}</span>
                 </p>
               </div>
 
@@ -215,7 +215,7 @@ export const ProductSales: React.FC = () => {
                   </span>
                 )}
                 {selectedVariant.boxesCount >= 3 && (
-                  <span className="text-xs sm:text-sm font-extrabold px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 border border-emerald-300">
+                  <span className="text-xs sm:text-sm font-extrabold px-3 py-1 rounded-lg bg-pink-100 text-rose-900 border border-pink-200">
                     Doprava zdarma
                   </span>
                 )}
@@ -226,11 +226,11 @@ export const ProductSales: React.FC = () => {
                 <span className="text-sm font-bold text-slate-700">
                   {t.pricing.quantity}:
                 </span>
-                <div className="flex items-center border-2 border-slate-200 rounded-xl bg-slate-50 p-1">
+                <div className="flex items-center border-2 border-pink-200 rounded-xl bg-pink-50/50 p-1">
                   <button
                     onClick={() => handleQuantityChange(-1)}
                     disabled={quantity <= 1}
-                    className="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-slate-800 hover:text-slate-950 disabled:opacity-30 shadow-xs cursor-pointer font-bold"
+                    className="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-slate-800 hover:text-rose-600 disabled:opacity-30 shadow-xs cursor-pointer font-bold"
                   >
                     <Minus className="w-4 h-4" />
                   </button>
@@ -240,7 +240,7 @@ export const ProductSales: React.FC = () => {
                   <button
                     onClick={() => handleQuantityChange(1)}
                     disabled={quantity >= 10}
-                    className="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-slate-800 hover:text-slate-950 disabled:opacity-30 shadow-xs cursor-pointer font-bold"
+                    className="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-slate-800 hover:text-rose-600 disabled:opacity-30 shadow-xs cursor-pointer font-bold"
                   >
                     <Plus className="w-4 h-4" />
                   </button>
@@ -251,15 +251,15 @@ export const ProductSales: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
                 <button
                   onClick={handleAddToCart}
-                  className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-xl font-extrabold text-xs sm:text-sm tracking-wider text-sky-950 bg-sky-100 hover:bg-sky-200 border-2 border-sky-300 transition-colors shadow-xs cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-xl font-extrabold text-xs sm:text-sm tracking-wider text-rose-950 bg-pink-100/80 hover:bg-pink-200/90 border-2 border-pink-300 transition-colors shadow-xs cursor-pointer"
                 >
-                  <ShoppingBag className="w-4 h-4 text-sky-900" />
+                  <ShoppingBag className="w-4 h-4 text-rose-700" />
                   <span>{t.pricing.addToCart}</span>
                 </button>
 
                 <button
                   onClick={handleBuyNow}
-                  className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-xl font-black text-xs sm:text-sm tracking-wider text-white bg-slate-950 hover:bg-sky-900 transition-all shadow-xl hover:shadow-2xl cursor-pointer"
+                  className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-xl font-black text-xs sm:text-sm tracking-wider text-white bg-gradient-to-r from-rose-500 via-pink-600 to-sky-600 hover:from-rose-600 hover:to-sky-700 transition-all shadow-xl shadow-pink-500/20 hover:shadow-2xl cursor-pointer"
                 >
                   <span>{t.pricing.buyNow}</span>
                   <ArrowRight className="w-4 h-4" />

@@ -43,7 +43,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ docType, onClose }) => {
             <>
               <h3 className="text-base font-bold text-slate-900">Zásady ochrany osobních údajů (GDPR)</h3>
               <p>
-                Společnost SEYOUL Skincare s.r.o., IČO: 12345678, se sídlem v Praze, zpracovává osobní údaje zákazníků v plném souladu s Nařízením Evropského parlamentu a Rady (EU) 2016/679 (GDPR).
+                Provozovatel se sídlem U Tržiště 2206, 594 01 Velké Meziříčí, zpracovává osobní údaje zákazníků v plném souladu s Nařízením Evropského parlamentu a Rady (EU) 2016/679 (GDPR).
               </p>
               <h4 className="font-bold text-slate-800">1. Jaké údaje zpracováváme</h4>
               <p>
@@ -55,7 +55,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ docType, onClose }) => {
               </p>
               <h4 className="font-bold text-slate-800">3. Vaše práva</h4>
               <p>
-                Máte právo požadovat přístup ke svým osobním údajům, jejich opravu, výmaz nebo omezení zpracování. Pro uplatnění svých práv nás kontaktujte na: privacy@seyoul.cz.
+                Máte právo požadovat přístup ke svým osobním údajům, jejich opravu, výmaz nebo omezení zpracování. Pro uplatnění svých práv nás kontaktujte na: <a href="mailto:lezara.info@gmail.com" className="text-rose-600 underline font-semibold">lezara.info@gmail.com</a> nebo telefonicky na <a href="tel:+420773868888" className="text-rose-600 underline font-semibold">+420 773 868 888</a>.
               </p>
             </>
           )}
@@ -125,7 +125,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ docType, onClose }) => {
                 Na veškeré prodávané zboží se vztahuje zákonná záruka 24 měsíců ode dne převzetí.
               </p>
               <p>
-                V případě vady výrobku nás kontaktujte s fotografií a číslem objednávky na e-mail: reklamace@seyoul.cz. Reklamace vyřizujeme obratem v nejkratším možném čase (maximálně do 30 dnů).
+                V případě vady výrobku nebo dotazů k doručení nás kontaktujte s fotografií a číslem objednávky na e-mail: <a href="mailto:lezara.info@gmail.com" className="text-rose-600 underline font-semibold">lezara.info@gmail.com</a> nebo telefonicky na <a href="tel:+420773868888" className="text-rose-600 underline font-semibold">+420 773 868 888</a>. Reklamace vyřizujeme obratem v nejkratším možném čase (maximálně do 30 dnů).
               </p>
             </>
           )}

@@ -258,7 +258,7 @@ export const CheckoutModal: React.FC = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      placeholder="+420 777 000 000"
+                      placeholder="+420 773 868 888"
                       className={`w-full px-3 py-2 text-xs rounded-xl border bg-slate-50 ${
                         errors.phone ? 'border-red-500' : 'border-slate-200 focus:bg-white'
                       }`}

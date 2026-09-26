@@ -22,11 +22,11 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-gradient-to-b from-white via-sky-50/20 to-slate-50 relative">
+    <section id="faq" className="py-24 bg-gradient-to-b from-white via-[#FFF5F8]/40 to-white relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-sky-800">
+          <p className="text-sm uppercase tracking-[0.25em] font-extrabold text-rose-700">
             {t.faq.tag}
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-black text-slate-950 tracking-tight">
@@ -75,9 +75,18 @@ export const FAQSection: React.FC = () => {
         </div>
 
         {/* Help footer */}
-        <div className="mt-12 text-center text-sm text-slate-600 flex items-center justify-center gap-2">
-          <HelpCircle className="w-5 h-5 text-sky-600" />
-          <span>Máte další dotazy? Napište nám kdykoliv na <a href="mailto:info@seyoul.cz" className="text-sky-700 underline font-bold">info@seyoul.cz</a></span>
+        <div className="mt-12 text-center text-sm text-slate-700 flex flex-wrap items-center justify-center gap-2">
+          <HelpCircle className="w-5 h-5 text-rose-500" />
+          <span>
+            Máte další dotazy? Napište nám kdykoliv na{' '}
+            <a href="mailto:lezara.info@gmail.com" className="text-rose-600 hover:text-rose-700 underline font-bold">
+              lezara.info@gmail.com
+            </a>{' '}
+            nebo volejte{' '}
+            <a href="tel:+420773868888" className="text-rose-600 hover:text-rose-700 underline font-bold">
+              +420 773 868 888
+            </a>
+          </span>
         </div>
       </div>
     </section>

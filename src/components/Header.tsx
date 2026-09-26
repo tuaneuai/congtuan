@@ -61,14 +61,14 @@ export const Header: React.FC = () => {
     <>
       <header className="sticky top-0 z-40 w-full glass-nav transition-all">
         {/* Top announcement bar */}
-        <div className="bg-gradient-to-r from-slate-950 via-[#0B2545] to-slate-950 text-white text-xs sm:text-sm font-semibold tracking-wide py-2 px-4 text-center flex items-center justify-center gap-3">
-          <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <div className="bg-gradient-to-r from-rose-500 via-pink-500 to-sky-500 text-white text-xs sm:text-sm font-semibold tracking-wide py-2.5 px-4 text-center flex items-center justify-center gap-3 shadow-xs">
+          <span className="inline-block w-2 h-2 rounded-full bg-white animate-pulse"></span>
           <span>
             {language === 'cz' && 'Korejská prémiová kosmetika · Doprava zdarma při objednávce 3+ boxů po celé ČR'}
             {language === 'vi' && 'Mỹ phẩm chuẩn K-Beauty · Miễn phí vận chuyển toàn CH Séc từ 3 hộp'}
             {language === 'en' && 'Authentic Seoul Skincare · Free Shipping on 3+ Boxes across EU'}
           </span>
-          <span className="hidden sm:inline bg-amber-400/20 text-amber-300 font-black tracking-wider px-2.5 py-0.5 rounded-md border border-amber-400/30">
+          <span className="hidden sm:inline bg-white/20 text-white font-black tracking-wider px-2.5 py-0.5 rounded-md border border-white/30 backdrop-blur-xs">
             KÓD: KOREA10 (-10%)
           </span>
         </div>
@@ -194,9 +194,9 @@ export const Header: React.FC = () => {
               onClick={() => setIsAdminOpen(true)}
               aria-label="Quản trị Admin"
               title="Bảng Quản Trị SEYOUL (Mật khẩu: admin123)"
-              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs text-sky-900 bg-sky-50/90 hover:bg-sky-100/90 rounded-lg border border-sky-200/80 transition-all cursor-pointer shadow-2xs hover:shadow-xs"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs text-rose-900 bg-pink-50/90 hover:bg-pink-100 rounded-lg border border-pink-200 transition-all cursor-pointer shadow-2xs hover:shadow-xs"
             >
-              <ShieldCheck className="w-3.5 h-3.5 text-sky-700" />
+              <ShieldCheck className="w-3.5 h-3.5 text-rose-600" />
               <span className="hidden sm:inline font-bold">Admin</span>
             </button>
 
@@ -204,11 +204,11 @@ export const Header: React.FC = () => {
             <button
               onClick={() => setIsCartOpen(true)}
               aria-label="Košík"
-              className="relative p-2 text-slate-700 hover:text-sky-950 rounded-lg hover:bg-sky-50 transition-colors cursor-pointer"
+              className="relative p-2 text-slate-700 hover:text-rose-950 rounded-lg hover:bg-pink-50 transition-colors cursor-pointer"
             >
               <ShoppingBag className="w-5 h-5" />
               {cartItemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-sky-600 text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-sm animate-scale-in">
+                <span className="absolute -top-1 -right-1 bg-gradient-to-r from-rose-500 to-pink-500 text-white text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-sm animate-scale-in">
                   {cartItemCount}
                 </span>
               )}
@@ -217,7 +217,7 @@ export const Header: React.FC = () => {
             {/* Prominent Header Buy CTA */}
             <button
               onClick={handleBuyNow}
-              className="hidden md:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold tracking-wider text-white bg-slate-900 hover:bg-sky-900 rounded-lg transition-all shadow-sm hover:shadow hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
+              className="hidden md:inline-flex items-center justify-center px-4 py-2 text-xs font-bold tracking-wider text-white bg-gradient-to-r from-rose-500 via-pink-600 to-sky-600 hover:from-rose-600 hover:to-sky-700 rounded-lg transition-all shadow-md shadow-pink-500/20 hover:shadow-lg hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
             >
               {t.nav.buyNow}
             </button>

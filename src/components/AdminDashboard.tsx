@@ -1420,18 +1420,45 @@ export const AdminDashboard: React.FC = () => {
                               ))}
                             </div>
 
-                            {/* Custom URL Input */}
+                            {/* Custom URL Input & File Upload */}
                             <div className="mt-3">
                               <label className="block text-xs font-semibold text-slate-700 mb-1">
-                                Hoặc Dán URL Hình Ảnh Tùy Chỉnh Của Bạn:
+                                Hoặc Tải Ảnh Lên / Dán URL Banner Của Bạn:
                               </label>
-                              <input
-                                type="url"
-                                value={bannerForm.imageUrl}
-                                onChange={(e) => setBannerForm({ ...bannerForm, imageUrl: e.target.value })}
-                                placeholder="https://example.com/hinh-anh-banner-cao-cap.jpg"
-                                className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs bg-white focus:ring-2 focus:ring-indigo-300 focus:outline-hidden"
-                              />
+                              <div className="flex gap-2">
+                                <input
+                                  type="url"
+                                  value={bannerForm.imageUrl}
+                                  onChange={(e) => setBannerForm({ ...bannerForm, imageUrl: e.target.value })}
+                                  placeholder="https://example.com/hinh-anh-banner-cao-cap.jpg"
+                                  className="flex-1 px-3 py-2 rounded-xl border border-slate-300 text-xs bg-white focus:ring-2 focus:ring-indigo-300 focus:outline-hidden"
+                                />
+                                <input
+                                  type="file"
+                                  id="admin-banner-upload"
+                                  onChange={(e) => {
+                                    const file = e.target.files?.[0];
+                                    if (file) {
+                                      const reader = new FileReader();
+                                      reader.onload = (ev) => {
+                                        const b64 = ev.target?.result as string;
+                                        if (b64) setBannerForm({ ...bannerForm, imageUrl: b64 });
+                                      };
+                                      reader.readAsDataURL(file);
+                                    }
+                                  }}
+                                  accept="image/*"
+                                  className="hidden"
+                                />
+                                <label
+                                  htmlFor="admin-banner-upload"
+                                  className="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-xs font-medium flex items-center gap-1.5 shrink-0 cursor-pointer"
+                                  title="Chọn file ảnh banner từ máy tính"
+                                >
+                                  <Upload className="w-3.5 h-3.5" />
+                                  <span>Tải ảnh lên</span>
+                                </label>
+                              </div>
                             </div>
                           </div>
 

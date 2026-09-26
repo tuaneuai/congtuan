@@ -328,56 +328,56 @@ const initialOrders: CustomerOrder[] = [
 const defaultGalleryItems: GalleryItem[] = [
   {
     id: 'g-1',
-    title: 'SEYOUL Original Packaging',
+    title: 'Hộp SEYOUL Chính Hãng',
     category: 'product',
-    subtitle: 'Prémiová krabička s holografickou pečetí pravosti K-Beauty (Hộp 5 mask)',
-    imageUrl: '',
-    gradient: 'from-slate-950 via-[#0a1e38] to-slate-950',
+    subtitle: 'Hộp 5 miếng mặt nạ thạch sinh học Bio-Collagen Real Deep Mask 34g chuẩn K-Beauty Seoul',
+    imageUrl: '/seyoul-jelly-mask.png',
+    gradient: 'from-[#FFF0F4] via-[#FFE4EC] to-[#E0F2FE]',
     accent: '5 Pieces / Box'
   },
   {
     id: 'g-2',
-    title: 'Translucent Hydrogel Matrix',
+    title: 'Cấu Trúc Thạch Hydrogel Sinh Học',
     category: 'texture',
-    subtitle: 'Hladká chladivá textura s vysokou koncentrací nízkomolekulárního kolagenu',
-    imageUrl: '',
-    gradient: 'from-[#061e38] via-[#0b335c] to-sky-950',
+    subtitle: 'Chất thạch collagen ngậm nước chuyển sang trong suốt sau khi hấp thụ trọn vẹn dưỡng chất',
+    imageUrl: '/seyoul-product-1.png',
+    gradient: 'from-[#F0FDF4] via-[#E0F2FE] to-[#FDF2F8]',
     accent: 'Low-Molecular Collagen'
   },
   {
     id: 'g-3',
-    title: 'Korean Spa Application',
+    title: 'Gói Combo Tiết Kiệm & Quà Tặng',
     category: 'ritual',
-    subtitle: '2dílné ergonomické provedení dokonale kopírující kontury obličeje',
-    imageUrl: '',
-    gradient: 'from-slate-900 via-sky-950 to-slate-950',
-    accent: 'Ergonomic Fit'
+    subtitle: 'Thiết kế gói sachet vô trùng tiện lợi, dễ dàng chăm sóc da căng bóng tại nhà hoặc spa',
+    imageUrl: '/seyoul-combo.png',
+    gradient: 'from-[#FDF2F8] via-[#FFF1F2] to-[#EFF6FF]',
+    accent: 'Spa Routine'
   },
   {
     id: 'g-4',
-    title: 'Water Caustics & Hydration',
-    category: 'texture',
-    subtitle: 'Kyselina hyaluronová vázající vlhkost v hlubokých vrstvách epidermis',
-    imageUrl: '',
-    gradient: 'from-[#031f3d] via-sky-900 to-slate-900',
-    accent: 'Deep Moisture'
+    title: 'Tem Niêm Phong & Chứng Nhận',
+    category: 'product',
+    subtitle: 'Nhập khẩu chính ngạch Hàn Quốc với công thức 216.000 PPM Collagen và Hyaluronic Acid',
+    imageUrl: '/seyoul-artboard.png',
+    gradient: 'from-[#EFF6FF] via-[#F5F3FF] to-[#FFF1F2]',
+    accent: '100% Genuine Korea'
   },
   {
     id: 'g-5',
-    title: 'Overnight Glass Skin Ritual',
+    title: 'Hiệu Ứng Glass Skin Suốt 8H',
     category: 'ritual',
-    subtitle: 'Po 3–4 hodinách maska zprůhlední a esence je plně absorbována',
-    imageUrl: '',
-    gradient: 'from-slate-950 via-slate-900 to-sky-950',
+    subtitle: 'Đắp qua đêm thức dậy với làn da căng mọng, đàn hồi và thu nhỏ lỗ chân lông rõ rệt',
+    imageUrl: '/seyoul-jelly-mask.png',
+    gradient: 'from-[#FFF1F2] via-[#FDF2F8] to-[#F0F7FF]',
     accent: 'Glass Skin Effect'
   },
   {
     id: 'g-6',
-    title: 'Individual Sachet Sterility',
+    title: 'Quy Trình Đóng Gói Vô Trùng',
     category: 'product',
-    subtitle: 'Samostatně sterilně balené masky pro zachování maximální čerstvosti (34g)',
-    imageUrl: '',
-    gradient: 'from-[#081e3a] via-blue-950 to-slate-950',
+    subtitle: 'Mỗi miếng mask 34g được bảo quản trong túi nhôm vô trùng giữ trọn tinh chất tươi mới',
+    imageUrl: '/seyoul-combo.png',
+    gradient: 'from-[#F0F7FF] via-[#EBF5FF] to-[#FFF1F2]',
     accent: 'Hygienic 34g Sachets'
   }
 ];
@@ -427,13 +427,13 @@ const defaultMediaSettings: MediaSettings = {
 export const defaultTopBannerSettings: TopBannerSettings = {
   enabled: true,
   imageUrl: '',
-  badgeText: 'KOREAN DERMA-LUXURY · 216 000 PPM REAL COLLAGEN',
-  title: 'SEYOUL BIO-COLLAGEN REAL DEEP MASK',
-  subtitle: 'Korejský noční rituál pro hlubokou hydrataci a skleněný finiš pleti. Akční cena od 499 Kč / box.',
-  buttonText: 'KOUPIT V AKCI (OD 499 KČ) →',
+  badgeText: 'CHÍNH HÃNG HÀN QUỐC · CÔNG NGHỆ HYDROGEL COLLAGEN',
+  title: 'MẶT NẠ THẠCH COLLAGEN SINH HỌC SEYOUL',
+  subtitle: 'Mặt nạ thạch collagen sinh học giúp dưỡng ẩm sâu, tái tạo độ đàn hồi và tạo hiệu ứng căng bóng Glass Skin chuẩn Hàn Quốc.',
+  buttonText: 'ĐẶT MUA NGAY (TỪ 499 KČ) →',
   targetLink: '#pricing',
   lightingEffect: 'diamond-sweep',
-  discountBadge: 'SLEVA AŽ 43% + DÁREK',
+  discountBadge: 'ƯU ĐÃI 43% + QUÀ TẶNG',
   showCountdown: true
 };
 
@@ -544,11 +544,11 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       try {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed)) {
-          // If items contain old unsplash images, clear them out
-          return parsed.map((item: GalleryItem) => ({
-            ...item,
-            imageUrl: item.imageUrl && item.imageUrl.includes('images.unsplash.com') ? '' : item.imageUrl
-          }));
+          if (parsed.some((item: GalleryItem) => !item.imageUrl || item.imageUrl.includes('images.unsplash.com'))) {
+            localStorage.setItem('seyoul_gallery', JSON.stringify(defaultGalleryItems));
+            return defaultGalleryItems;
+          }
+          return parsed;
         }
       } catch {
         return defaultGalleryItems;
