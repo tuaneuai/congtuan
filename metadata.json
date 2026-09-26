@@ -1,0 +1,6 @@
+{
+  "name": "SEYOUL - Collagen Jelly Mask | Korean Beauty",
+  "description": "Prémiová korejská kolagenová gelová maska pro hloubkovou hydrataci, zpevnění a zářivou pleť. Vyrobeno v Koreji.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
