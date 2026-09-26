@@ -575,7 +575,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         if (parsed.imageUrl && parsed.imageUrl.includes('images.unsplash.com')) {
           parsed.imageUrl = '';
         }
-        return { ...defaultTopBannerSettings, ...parsed };
+        return { ...defaultTopBannerSettings, ...parsed, enabled: true };
       } catch {
         return defaultTopBannerSettings;
       }
